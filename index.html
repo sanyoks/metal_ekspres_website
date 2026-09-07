@@ -1,5 +1,5 @@
 <!--
-    Mājaslapa: Metal Ekspres
+    Mājaslapa: Metalexpress
     Autors: Sanita Kuzminska
     Izveidots: 2026
 -->
@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Metal Ekspres | Metālapstrāde un lāzergriešana</title>
+    <title>Metalexpress | Metālapstrāde un lāzergriešana</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,7 +18,7 @@
 <body>
 
     <header class="header">
-        <a href="#home" class="logo">Metal Ekspres</a>
+        <a href="#home" class="logo">Metalexpress</a>
 
         <button class="navbar-toggler" type="button" id="menu-icon" aria-label="Atvērt izvēlni">
             <i class="bx bx-menu"></i>
@@ -27,6 +27,7 @@
         <nav class="navbar" id="navbar">
             <a href="#home">Sākums</a>
             <a href="#projects">Ko piedāvājam</a>
+            <a href="#gallery">Galerija</a>
             <a href="#contact">Kontakti</a>
         </nav>
     </header>
@@ -34,11 +35,10 @@
     <section class="home" id="home">
         <div class="home-overlay"></div>
         <div class="home-content">
-            <p class="home-eyebrow">Precīza metālapstrāde</p>
-            <h1>Metal <span>Ekspres</span></h1>
+            <h1>Metal <span>Express</span></h1>
             <h3>Metālapstrāde | Lāzergriešana</h3>
             <p class="home-text">
-                Precīza lāzergriešana un metālapstrāde ražošanai, būvniecībai un individuāliem projektiem.
+                Lāzergriešana un metālapstrāde ražošanai, būvniecībai un individuāliem projektiem.
             </p>
             <div class="btn-group">
                 <a href="#contact" class="btn">Kontakti</a>
@@ -57,25 +57,61 @@
             <article class="service-card">
                 <i class="bx bx-target-lock"></i>
                 <h3>Lāzergriešana</h3>
-                <p>Precīza lokšņu metāla griešana pēc rasējumiem ar tīru malu un atkārtojamu kvalitāti.</p>
             </article>
             <article class="service-card">
                 <i class="bx bx-cog"></i>
                 <h3>Metālapstrāde</h3>
-                <p>Apstrāde, sagatavošana un detaļu izgatavošana ražošanas un būvniecības vajadzībām.</p>
             </article>
             <article class="service-card">
                 <i class="bx bx-layer"></i>
                 <h3>Precīzas detaļas</h3>
-                <p>Sērijveida un individuālas detaļas ar skaidriem izmēriem un rūpīgu izpildi.</p>
             </article>
             <article class="service-card">
                 <i class="bx bx-pencil"></i>
                 <h3>Rasējumu sagatavošana</h3>
-                <p>Palīdzam pārvērst ideju izpildāmā rasējumā, lai griešana sāktos bez kavēšanās.</p>
             </article>
         </div>
     </section>
+
+    <section class="gallery" id="gallery">
+        <h2 class="heading">Galerija</h2>
+
+        <div class="gallery-grid">
+            <button type="button" class="gallery-item" data-full="img/img_1.jpeg" aria-label="Atvērt attēlu: CNC darbgalds un metāla detaļas">
+                <img
+                    src="thumb/img_1_thumb.webp"
+                    alt="CNC darbgalds un izgatavotas metāla detaļas"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </button>
+            <button type="button" class="gallery-item" data-full="img/img_2.jpeg" aria-label="Atvērt attēlu: precīzi izgatavotas metāla detaļas">
+                <img
+                    src="thumb/img_2_thumb.webp"
+                    alt="Precīzi izgatavotas metāla plāksnes un gredzeni"
+                    width="800"
+                    height="560"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </button>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox" hidden>
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Aizvērt">
+            <i class="bx bx-x"></i>
+        </button>
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Iepriekšējais attēls">
+            <i class="bx bx-chevron-left"></i>
+        </button>
+        <img id="lightbox-image" alt="" decoding="async" />
+        <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Nākamais attēls">
+            <i class="bx bx-chevron-right"></i>
+        </button>
+    </div>
 
     <section class="contact" id="contact">
         <h2 class="heading">Kontakti</h2>
@@ -88,17 +124,24 @@
             </div>
             <div class="contact-item">
                 <i class="bx bxs-phone"></i>
+                <span>+371 29252998</span>
+            </div>
+            <div class="contact-item">
+                <i class="bx bxl-whatsapp"></i>
                 <span>+371 25597768</span>
             </div>
             <div class="contact-item">
                 <i class="bx bxs-phone"></i>
-                <span>+371 29252998</span>
+                <div class="contact-text">
+                    <span>+371 27293747</span>
+                    <small>Failu sagatavošana</small>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <p class="copyright">© 2026 Metal Ekspres.</p>
+        <p class="copyright">© 2026 Metalexpress.</p>
     </footer>
 
     <script src="script.js"></script>
