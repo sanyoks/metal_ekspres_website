@@ -112,7 +112,11 @@ a {
     display: flex;
     align-items: center;
     padding: 8rem 8% 5rem;
-    background: url("sakuma_fons.png") center / cover no-repeat;
+    background-color: #121416;
+    background-image: url("sakuma_fons.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .home-overlay {
